@@ -45,15 +45,16 @@ function runAnimation() {
 }
 
 step2();
+step3();
 function step2(){
   setTimeout(() => {
     finalMessage.setAttribute("hidden","hidden");
     myStep2.removeAttribute("hidden");  
     myFirefly.removeAttribute("hidden");       
     myStep2.id = "step2";
-    step3();
+    
     console.log("debug step 2")
-  }, 13000);
+  }, 15000);
 }
 
 function step3(){
@@ -64,7 +65,10 @@ function step3(){
     myStep3.removeAttribute("hidden");     
     myStep3.id = "step3";
     console.log("debug step 3")
-  }, 5000);
+
+    playHappyBirthDay();
+    anim();
+  }, 23000);
 }
 
 function handleAnimationEnd(e, num, idx) {
@@ -85,13 +89,13 @@ function handleAnimationEnd(e, num, idx) {
       counter.classList.add("hide");
       finalMessage2.id = "container";
       finalMessage.classList.add("show");
-      console.debug("debug T");
-    }, 100);
+    }, 300);
     //Play music
-    playHappyBirthDay();
-    anim();
   }
 }
+
+
+
 // ANIM//////////////////////
 let indexArr = 0;
 let isRepeat = true;
@@ -105,10 +109,10 @@ var w = c.width = window.innerWidth,
 
   opts = {
     strings: [
-      ['1111111', '11111111'],
-      ['HÔM NAY LÀ ', 'MỘT NGÀY ĐẶC BIỆT'],
-      ['22222222', '22222222'],
-      ['CHÚC MỪNG', 'SINH NHẬT', '333333'],
+      ['HÔM NAY LÀ', 'MỘT NGÀY ĐẶC BIỆT'],
+      ['HÔM NAY LÀ 111', 'MỘT NGÀY ĐẶC BIỆT'],
+      ['HÔM NAY LÀ 3333', 'MỘT NGÀY ĐẶC BIỆT'],
+      ['HÔM NAY LÀ 444', 'MỘT NGÀY ĐẶC BIỆT'],
     ],
     charSize: 60,
     charSpacing: 70,
@@ -498,7 +502,7 @@ function anim() {
   //TRIET NOTE ĐOẠN TIẾP THEO CỦA CHỮ MÀU
   if (!isRepeat && !isShowBox) {
     isShowBox = true;
-    console.log("debug step 4")
+    location.replace("./cau-ca.html");
   }
 }
 
