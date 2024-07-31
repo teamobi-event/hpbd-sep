@@ -85,7 +85,7 @@ svg {
 }
 @media (min-width: 600px) {
   .slide-card__text {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 .slide-card__footer {
@@ -295,7 +295,7 @@ svg {
 body {
   background: #111;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .star {
@@ -337,3 +337,4 @@ body {
       font-size: 8px; 
   }
 }
+
