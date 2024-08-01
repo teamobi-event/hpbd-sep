@@ -16,8 +16,6 @@ function playEmXinh() {
   audioEmXinh.play();
 }
 
-// Fire fly
-const mFirefly = document.querySelector("#myFirefly");
 // const mySakura = document.querySelector("#main");
 
 // let myTick = 0;
@@ -29,7 +27,6 @@ const counter = document.querySelector(".counter");
 const finalMessage = document.querySelector(".final");
 const finalMessage2 = document.querySelector("#container2");
 let myStep2 = document.querySelector("#step22");
-const myFirefly = document.querySelector("#myFirefly");
 let myStep3 = document.querySelector("#step33");
 
 
@@ -49,8 +46,7 @@ step3();
 function step2(){
   setTimeout(() => {
     finalMessage.setAttribute("hidden","hidden");
-    myStep2.removeAttribute("hidden");  
-    myFirefly.removeAttribute("hidden");       
+    myStep2.removeAttribute("hidden");        
     myStep2.id = "step2";
     
     console.log("debug step 2")
@@ -110,9 +106,6 @@ var w = c.width = window.innerWidth,
   opts = {
     strings: [
       ['HÔM NAY LÀ', 'MỘT NGÀY ĐẶC BIỆT'],
-      ['HÔM NAY LÀ 111', 'MỘT NGÀY ĐẶC BIỆT'],
-      ['HÔM NAY LÀ 3333', 'MỘT NGÀY ĐẶC BIỆT'],
-      ['HÔM NAY LÀ 444', 'MỘT NGÀY ĐẶC BIỆT'],
     ],
     charSize: 60,
     charSpacing: 70,
