@@ -1,6 +1,6 @@
-const audioEmXinh = new Audio("./music/emxinh.mp3");
 const audioHPBD = new Audio("./music/hpbd.mp3");
 const audioKHMSN = new Audio('./music/khmsn.mp3');
+const audioTeamobi = new Audio('./music/teamobi.mp3');
 
 function playHPBD() {
   audioHPBD.loop = true;
@@ -11,9 +11,9 @@ function playHappyBirthDay() {
   audioKHMSN.play();
 }
 
-function playEmXinh() {
-  audioEmXinh.loop = true;
-  audioEmXinh.play();
+function playTeamobi() {
+  audioTeamobi.loop = false;
+  audioTeamobi.play();
 }
 
 // const mySakura = document.querySelector("#main");
@@ -48,7 +48,7 @@ function step2(){
     finalMessage.setAttribute("hidden","hidden");
     myStep2.removeAttribute("hidden");        
     myStep2.id = "step2";
-    
+    playTeamobi();
     console.log("debug step 2")
   }, 15000);
 }
@@ -105,7 +105,8 @@ var w = c.width = window.innerWidth,
 
   opts = {
     strings: [
-      ['HÔM NAY LÀ', 'MỘT NGÀY ĐẶC BIỆT'],
+      ['CHÚC MỪNG SINH NHẬT', 'SẾP MINH'],
+      ['SẾP MINH', 'NUMBER 1'],
     ],
     charSize: 60,
     charSpacing: 70,

@@ -293,7 +293,10 @@ svg {
 }
 
 body {
-  background: #111;
+  /* background: #111;
+   */
+   background-image: url('../images/bg.jpg');
+   background-size: cover;
   min-height: 100vh;
   /* overflow: hidden; */
 }
